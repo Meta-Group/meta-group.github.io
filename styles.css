@@ -310,6 +310,51 @@ body {
 }
 
 /* Publications Section */
+.scholar-profile {
+    background-color: var(--bg-light);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.scholar-profile p {
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+}
+
+.scholar-stats {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-top: 1rem;
+}
+
+.btn-large {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-large:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0 6px 12px rgba(230, 57, 70, 0.3);
+    transform: translateY(-2px);
+}
+
+.section-intro {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
 .publications-list {
     display: flex;
     flex-direction: column;
@@ -422,6 +467,14 @@ body {
     color: var(--secondary-color);
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+.infra-note {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
 }
 
 /* Contact Section */
