@@ -61,11 +61,19 @@ body {
 .nav-brand .logo {
     height: 50px;
     width: auto;
+    object-fit: contain;
+    filter: brightness(1.1);
+    transition: filter 0.3s ease;
+}
+
+.nav-brand:hover .logo {
+    filter: brightness(1.2);
 }
 
 .nav-brand h1 {
     font-size: 1.5rem;
     font-weight: 700;
+    margin: 0;
 }
 
 .nav-menu {
