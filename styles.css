@@ -555,6 +555,42 @@ body {
     color: var(--accent-color);
 }
 
+/* Visiting Researchers List */
+.visiting-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.visiting-item {
+    background-color: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.visiting-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.visiting-item p {
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.visiting-item a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.visiting-item a:hover {
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .section-title {
