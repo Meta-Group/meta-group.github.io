@@ -37,13 +37,14 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--bg-white);
+    color: var(--primary-color);
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
     box-shadow: var(--shadow);
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 .navbar .container {
@@ -55,25 +56,36 @@ body {
 .nav-brand {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+}
+
+.nav-brand .university-logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.nav-brand .university-logo:hover {
+    transform: scale(1.05);
 }
 
 .nav-brand .logo {
     height: 50px;
     width: auto;
     object-fit: contain;
-    filter: brightness(1.1);
-    transition: filter 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .nav-brand:hover .logo {
-    filter: brightness(1.2);
+    transform: scale(1.05);
 }
 
 .nav-brand h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     margin: 0;
+    color: var(--primary-color);
 }
 
 .nav-menu {
@@ -83,10 +95,10 @@ body {
 }
 
 .nav-menu a {
-    color: white;
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .nav-menu a:hover {
@@ -104,10 +116,13 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.75) 0%, rgba(230, 57, 70, 0.75) 100%),
+                url('images/units_background.png') center/cover no-repeat;
+    background-attachment: fixed;
     color: white;
-    padding: 6rem 0;
+    padding: 8rem 0;
     text-align: center;
+    position: relative;
 }
 
 .hero h2 {
