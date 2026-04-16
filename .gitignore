@@ -1,0 +1,12 @@
+*~
+.DS_Store
+.idea
+.vscode
+*.swp
+*.swo
+*pycache*
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+_site/
+Gemfile.lock

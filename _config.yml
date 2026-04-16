@@ -1,0 +1,18 @@
+title: Machine Learning Group
+description: Machine Learning Research Group at University of Trieste
+url: https://meta-group.github.io
+baseurl: ""
+author: ML Group
+email: mlgroup@units.it
+
+# Build settings
+theme: null
+plugins:
+  - jekyll-feed
+
+# Exclude files
+exclude:
+  - .gitignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock
