@@ -557,35 +557,30 @@ body {
 
 /* Visiting Researchers List */
 .visiting-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
 }
 
 .visiting-item {
-    background-color: transparent;
-    padding: 0.4rem 0;
-    border-radius: 0;
-    border-left: none;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.visiting-item:last-child {
-    border-bottom: none;
+    background-color: var(--bg-light);
+    padding: 1rem;
+    border-radius: 6px;
+    border-left: 3px solid var(--secondary-color);
 }
 
 .visiting-item h4 {
     color: var(--primary-color);
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.4rem;
     font-size: 0.95rem;
     font-weight: 600;
 }
 
 .visiting-item p {
     color: var(--text-dark);
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.3rem;
     font-size: 0.85rem;
-    line-height: 1.3;
+    line-height: 1.4;
 }
 
 .visiting-item a {
@@ -597,6 +592,18 @@ body {
 
 .visiting-item a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .visiting-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .visiting-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Responsive Design */
