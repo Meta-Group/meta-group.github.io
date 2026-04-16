@@ -559,32 +559,39 @@ body {
 .visiting-list {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.75rem;
 }
 
 .visiting-item {
-    background-color: var(--bg-light);
-    padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid var(--secondary-color);
+    background-color: transparent;
+    padding: 0.75rem 0;
+    border-radius: 0;
+    border-left: none;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.visiting-item:last-child {
+    border-bottom: none;
 }
 
 .visiting-item h4 {
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .visiting-item p {
     color: var(--text-dark);
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
 }
 
 .visiting-item a {
     color: var(--secondary-color);
     text-decoration: none;
     font-weight: 600;
+    font-size: 0.9rem;
 }
 
 .visiting-item a:hover {
