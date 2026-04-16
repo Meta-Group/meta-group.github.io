@@ -116,13 +116,17 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, rgba(26, 26, 26, 0.75) 0%, rgba(230, 57, 70, 0.75) 100%),
-                url('images/units_background.png') center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6) 0%, rgba(230, 57, 70, 0.6) 100%),
+                url('images/units_background.png') center/contain no-repeat;
     background-attachment: fixed;
     color: white;
-    padding: 8rem 0;
+    padding: 10rem 0;
     text-align: center;
     position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero h2 {
