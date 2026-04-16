@@ -1,6 +1,10 @@
-# Machine Learning Group Website
+# Machine Learning Laboratory Website
 
-This is the official website for the Machine Learning Research Group at the Department of Engineering and Architecture, University of Trieste.
+This is the official website for the Machine Learning Laboratory at the Department of Engineering and Architecture, University of Trieste.
+
+The lab brings together research from two complementary groups led by:
+- **Prof. Sylvio Barbon Junior** (https://barbon.inginf.units.it/)
+- **Prof. Andrea De Lorenzo** (https://delorenzo.inginf.units.it/)
 
 ## Website: https://meta-group.github.io
 
